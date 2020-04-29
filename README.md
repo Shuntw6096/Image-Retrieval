@@ -31,6 +31,6 @@ Neural Networks Structure
 ------
 |#|Autoencoder|encoder|decoder|
 |---|----|---|---|
-|1|![autoencoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/autoencodr_deep.JPG)|![encoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/encodr_deep.JPG)|![decoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deencodr_deep.JPG)|
-|2|![autoencoder non deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/autoencodr_non_deep.JPG)|![encoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/encodr_non_deep.JPG)|![decoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deencodr_non_deep.JPG)|
+|1|![autoencoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/autoencoder_deep.JPG)|![encoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/encoder_deep.JPG)|![decoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/decoder_deep.JPG)|
+|2|![autoencoder non deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/autoencoder_non_deep.JPG)|![encoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/encoder_non_deep.JPG)|![decoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/decoder_non_deep.JPG)|
 
