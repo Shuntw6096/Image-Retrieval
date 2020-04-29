@@ -15,7 +15,7 @@ Data Processing
 **ZCA Whitening（Zero-phase Component Analysis Whitening）**  
 首先計算訓練集的協方差矩陣![formula0](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula0.JPG)  
 並對此做奇異值分解（singular value decomposition）![formula0](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula1.JPG)  
-U是Σ的特徵向量矩陣，S是其特徵值矩陣；因为Σ 是對稱方陣![formula5](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula5.JPG)  
+U是Σ的特徵向量矩陣，S是其特徵值矩陣；因为Σ 是對稱方陣![formula4](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula4.JPG)  
 ![formula2](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula2.JPG)  
 
 
