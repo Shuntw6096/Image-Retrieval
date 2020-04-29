@@ -30,7 +30,7 @@ U是Σ的特徵向量矩陣，S是其特徵值矩陣；因为Σ 是對稱方陣!
 Neural Networks Structure
 ------
 |#|Autoencoder|encoder|decoder|
-|---|----|:---:|
+|---|----|---|---|
 |1|![autoencoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/autoencodr_deep.JPG)|![encoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/encodr_deep.JPG)|![decoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deencodr_deep.JPG)|
 |2|![autoencoder non deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/autoencodr_non_deep.JPG)|![encoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/encodr_non_deep.JPG)|![decoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deencodr_non_deep.JPG)|
 
