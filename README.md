@@ -13,5 +13,6 @@ Fashion MNIST已經預先劃分資料用途，訓練集60000筆、測試集10000
 Data Processing
 ------
 **ZCA Whitening（Zero-phase Component Analysis Whitening）**
+
 ![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
 
