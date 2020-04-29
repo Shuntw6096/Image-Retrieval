@@ -18,6 +18,16 @@ Data Processing
 U是Σ的特徵向量矩陣，S是其特徵值矩陣；因为Σ 是對稱方陣![formula4](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula4.JPG)  
 ![formula2](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula2.JPG)  
 加入ϵ是為了避免特徵值接近零導致縮放時除以零，然後ZCA Whitening與PCA Whitening的關係是：![formula3](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula3.JPG)  
+通常使用PCA Whitening是為了去除特徵間彼此的相關性，而ZCA Whitening會將PCA處理過的數據變換進原本的空間，通常會在計算協方差矩陣前減去各特徵的均值。  
+準備四種訓練集：  
+|#|圖片|說明|
+|---|----|:---:|
+|1|![original img](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/original_img.JPG)|原始圖片|
+|2|![adding noise img](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/img_add_noise.JPG)|原始圖片加入高斯噪聲|
+|3|![zca img](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/img_zca.JPG)|原始圖片經過ZCA Whitening|
+|4|![zca noise img](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/img_add_noise_zca.JPG)|原始圖片先加入高斯噪聲再經過ZCA Whitening|
+
+
 
 
 
