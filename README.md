@@ -17,5 +17,7 @@ Data Processing
 並對此做奇異值分解（singular value decomposition）![formula0](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula1.JPG)  
 U是Σ的特徵向量矩陣，S是其特徵值矩陣；因为Σ 是對稱方陣![formula4](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula4.JPG)  
 ![formula2](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula2.JPG)  
+加入ϵ是為了避免特徵值接近零導致縮放時除以零，然後ZCA Whitening與PCA Whitening的關係是：![formula3](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula3.JPG)  
+
 
 
