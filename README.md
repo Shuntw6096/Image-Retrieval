@@ -9,5 +9,9 @@ Dataset Introduction
 ------
 Fashion MNIST已經預先劃分資料用途，訓練集60000筆、測試集10000筆，總共10個類別：T-shirt/top、Trouser、Pullover、Dress、Coat、Sandal、Shirt、Sneaker、Bag、Ankle boot對應0~9類別．每個類別6000筆，測試集則每個類別1000筆．
 
+
 Data Processing
 ------
+**ZCA Whitening（Zero-phase Component Analysis Whitening）**
+![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
+
