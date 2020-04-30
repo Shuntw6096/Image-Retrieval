@@ -36,7 +36,7 @@ Neural Networks Structure
 
 Experiments
 ------
-**1. Deep NN **
+** 1. Deep NN **
    * 使用原始圖片當訓練集
    |#|圖片|說明|
    |---|----|:---:|
