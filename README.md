@@ -36,8 +36,9 @@ Neural Networks Structure
 
 Experiments
 ------
-** * Deep NN**  
-|#|圖片|說明|
-|---|----|:---:|
-|1|![deep nn 1](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn1.jpg)|圖片重建|
-|2|![deep nn 2](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn2.jpg)|使用高斯噪聲圖片重建|
+** 1. Deep NN**
+   * 使用原始圖片當訓練集
+   |#|圖片|說明|
+   |---|----|:---:|
+   |1|![deep nn 1](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn1.jpg)|圖片重建|
+   |2|![deep nn 2](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn2.jpg)|使用高斯噪聲圖片重建|
