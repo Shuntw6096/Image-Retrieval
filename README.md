@@ -35,9 +35,8 @@ U是Σ的特徵向量矩陣，S是其特徵值矩陣；因为Σ 是對稱方陣!
 |Non-deep Networks|![autoencoder non deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/autoencoder_non_deep.jpg)|![encoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/encoder_non_deep.jpg)|![decoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/decoder_non_deep.jpg)|  
 
 # Experiments
-
-## 1. Deep NN
-* 使用原始圖片當訓練集：  
+## Deep NN
+1. 使用原始圖片當訓練集：  
 |#|圖片|說明|
 |---|----|:---:|
 |1|![deep nn 1](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn1.jpg)|圖片重建|
