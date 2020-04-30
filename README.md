@@ -41,3 +41,8 @@ U是Σ的特徵向量矩陣，S是其特徵值矩陣；因为Σ 是對稱方陣!
 |---|----|:---:|
 |1|![deep nn 1](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn1.jpg)|圖片重建|
 |2|![deep nn 2](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn2.jpg)|使用高斯噪聲圖片重建|
+|3|![deep nn 3](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn3.jpg)|使用原始圖片做圖片搜尋|
+|4|![deep nn 4](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn4.jpg)|使用噪聲圖片做圖片搜尋|
+|5|![deep nn 5](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn5.jpg)|原始測試集搜尋原始訓練集的分類混淆矩陣|
+|6|![deep nn 6](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn6.jpg)|原始測試集搜尋有噪聲的訓練集的分類混淆矩陣|
+
