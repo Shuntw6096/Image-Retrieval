@@ -47,3 +47,15 @@ U是Σ的特徵向量矩陣，S是其特徵值矩陣；因为Σ 是對稱方陣!
 |5|![deep nn 5](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn5.jpg)|原始測試集搜尋原始訓練集的分類混淆矩陣|
 |6|![deep nn 6](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn6.jpg)|原始測試集搜尋有噪聲的訓練集的分類混淆矩陣|
 
+2.使用噪聲圖片當訓練集： 
+
+|#|圖片|說明|
+|---|----|:---:|
+|1|![deep nn 7](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn7.jpg)|圖片重建|
+|2|![deep nn 11](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn11.jpg)|使用高斯噪聲圖片重建|
+|3|![deep nn 8](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn8.jpg)|使用原始圖片做圖片搜尋|
+|4|![deep nn 9](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn9.jpg)|使用噪聲圖片做圖片搜尋|
+|5|![deep nn 10](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn10.jpg)|原始測試集搜尋有噪聲的訓練集的分類混淆矩陣|
+
+
+
