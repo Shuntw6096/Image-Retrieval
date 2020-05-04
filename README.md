@@ -13,25 +13,25 @@ Fashion MNIST已經預先劃分資料用途，訓練集60000筆、測試集10000
 # Data Processing
 
 **ZCA Whitening（Zero-phase Component Analysis Whitening）**  
-首先計算訓練集的協方差矩陣![formula0](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula0.JPG)  
-並對此做奇異值分解（singular value decomposition）![formula0](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula1.JPG)  
-U是Σ的特徵向量矩陣，S是其特徵值矩陣；因为Σ 是對稱方陣![formula4](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula4.JPG)  
-![formula2](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula2.JPG)  
-加入ϵ是為了避免特徵值接近零導致縮放時除以零，然後ZCA Whitening與PCA Whitening的關係是：![formula3](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/formula3.JPG)  
+首先計算訓練集的協方差矩陣![formula0](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/formula0.JPG)  
+並對此做奇異值分解（singular value decomposition）![formula0](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/formula1.JPG)  
+U是Σ的特徵向量矩陣，S是其特徵值矩陣；因为Σ 是對稱方陣![formula4](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/formula4.JPG)  
+![formula2](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/formula2.JPG)  
+加入ϵ是為了避免特徵值接近零導致縮放時除以零，然後ZCA Whitening與PCA Whitening的關係是：![formula3](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/formula3.JPG)  
 通常使用PCA Whitening是為了去除特徵間彼此的相關性，而ZCA Whitening會將PCA處理過的數據變換進原本的空間，通常會在計算協方差矩陣前減去各特徵的均值。  
 準備四種訓練集：  
 |#|圖片|說明|
 |---|----|:---:|
-|1|![original img](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/original_img.JPG)|原始圖片|
-|2|![adding noise img](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/img_add_noise.JPG)|原始圖片加入高斯噪聲|
-|3|![zca img](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/img_zca.JPG)|原始圖片經過ZCA Whitening|
-|4|![zca noise img](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/img_add_noise_zca.JPG)|原始圖片先加入高斯噪聲再經過ZCA Whitening|
+|1|![original img](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/original_img.JPG)|原始圖片|
+|2|![adding noise img](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/img_add_noise.JPG)|原始圖片加入高斯噪聲|
+|3|![zca img](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/img_zca.JPG)|原始圖片經過ZCA Whitening|
+|4|![zca noise img](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/img_add_noise_zca.JPG)|原始圖片先加入高斯噪聲再經過ZCA Whitening|
 
 # Neural Networks Structure
 
 |#|Autoencoder|encoder|decoder|
 |---|----|---|---|
-|Deep Networks|![autoencoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/autoencoder_deep.jpg)|![encoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/encoder_deep.jpg)|![decoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/decoder_deep.jpg)|
+|Deep Networks|![autoencoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/autoencoder_deep.jpg)|![encoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/encoder_deep.jpg)|![decoder deep](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/decoder_deep.jpg)|
 
 
 # Experiments
@@ -40,43 +40,43 @@ U是Σ的特徵向量矩陣，S是其特徵值矩陣；因为Σ 是對稱方陣!
 
 |#|圖片|說明|
 |---|----|:---:|
-|1|![deep nn 1](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn1.jpg)|原始圖片重建|
-|2|![deep nn 2](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn2.jpg)|使用高斯噪聲圖片重建|
-|3|![deep nn 3](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn3.jpg)|使用原始圖片做圖片搜尋|
-|4|![deep nn 4](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn4.jpg)|使用噪聲圖片做圖片搜尋|
-|5|![deep nn 5](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn5.jpg)|原始測試集搜尋原始訓練集的分類混淆矩陣|
-|6|![deep nn 6](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn6.jpg)|原始測試集搜尋有噪聲訓練集的分類混淆矩陣|
+|1|![deep nn 1](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn1.jpg)|原始圖片重建|
+|2|![deep nn 2](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn2.jpg)|使用高斯噪聲圖片重建|
+|3|![deep nn 3](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn3.jpg)|使用原始圖片做圖片搜尋|
+|4|![deep nn 4](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn4.jpg)|使用噪聲圖片做圖片搜尋|
+|5|![deep nn 5](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn5.jpg)|原始測試集搜尋原始訓練集的分類混淆矩陣|
+|6|![deep nn 6](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn6.jpg)|原始測試集搜尋有噪聲訓練集的分類混淆矩陣|
 
 2. 使用噪聲圖片當訓練集： 
 
 |#|圖片|說明|
 |---|----|:---:|
-|1|![deep nn 7](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn7.jpg)|原始圖片重建|
-|2|![deep nn 11](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn11.jpg)|使用高斯噪聲圖片重建|
-|3|![deep nn 8](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn8.jpg)|使用原始圖片做圖片搜尋|
-|4|![deep nn 9](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn9.jpg)|使用噪聲圖片做圖片搜尋|
-|5|![deep nn 10](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn10.jpg)|原始測試集搜尋有噪聲的訓練集的分類混淆矩陣|
+|1|![deep nn 7](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn7.jpg)|原始圖片重建|
+|2|![deep nn 11](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn11.jpg)|使用高斯噪聲圖片重建|
+|3|![deep nn 8](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn8.jpg)|使用原始圖片做圖片搜尋|
+|4|![deep nn 9](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn9.jpg)|使用噪聲圖片做圖片搜尋|
+|5|![deep nn 10](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn10.jpg)|原始測試集搜尋有噪聲的訓練集的分類混淆矩陣|
 
 3. 使用ZCA圖片當訓練集
 
 |#|圖片|說明|
 |---|----|:---:|
-|1|![deep nn 14](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn14.jpg)|ZCA圖片重建|
-|2|![deep nn 15](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn15.jpg)|使用ZCA高斯噪聲圖片重建|
-|3|![deep nn 12](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn12.jpg)|使用ZCA圖片做圖片搜尋|
-|4|![deep nn 13](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn13.jpg)|使用ZCA高斯噪聲圖片做圖片搜尋|
-|5|![deep nn 16](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn16.jpg)|ZCA測試集搜尋ZCA訓練集的分類混淆矩陣|
-|6|![deep nn 17](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn17.jpg)|ZCA測試集搜尋ZCA高斯噪聲訓練集的分類混淆矩陣|
+|1|![deep nn 14](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn14.jpg)|ZCA圖片重建|
+|2|![deep nn 15](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn15.jpg)|使用ZCA高斯噪聲圖片重建|
+|3|![deep nn 12](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn12.jpg)|使用ZCA圖片做圖片搜尋|
+|4|![deep nn 13](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn13.jpg)|使用ZCA高斯噪聲圖片做圖片搜尋|
+|5|![deep nn 16](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn16.jpg)|ZCA測試集搜尋ZCA訓練集的分類混淆矩陣|
+|6|![deep nn 17](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn17.jpg)|ZCA測試集搜尋ZCA高斯噪聲訓練集的分類混淆矩陣|
 
 4. 使用ZCA高斯噪聲圖片當訓練集
 
 |#|圖片|說明|
 |---|----|:---:|
-|1|![deep nn 18](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn18.jpg)|ZCA圖片重建|
-|2|![deep nn 19](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn19.jpg)|使用ZCA高斯噪聲圖片重建|
-|3|![deep nn 20](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn20.jpg)|使用ZCA圖片做圖片搜尋|
-|4|![deep nn 21](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn21.jpg)|使用ZCA高斯噪聲圖片做圖片搜尋|
-|5|![deep nn 22](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn22.jpg)|ZCA測試集搜尋ZCA高斯噪聲訓練集的分類混淆矩陣|
+|1|![deep nn 18](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn18.jpg)|ZCA圖片重建|
+|2|![deep nn 19](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn19.jpg)|使用ZCA高斯噪聲圖片重建|
+|3|![deep nn 20](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn20.jpg)|使用ZCA圖片做圖片搜尋|
+|4|![deep nn 21](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn21.jpg)|使用ZCA高斯噪聲圖片做圖片搜尋|
+|5|![deep nn 22](https://github.com/Shuntw6096/Image-Retrieval/blob/master/img/deepnn22.jpg)|ZCA測試集搜尋ZCA高斯噪聲訓練集的分類混淆矩陣|
 
 # Conclusion
 
