@@ -68,7 +68,7 @@ U是Σ的特徵向量矩陣，S是其特徵值矩陣；因为Σ 是對稱方陣!
 |5|![deep nn 16](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn16.jpg)|ZCA測試集搜尋ZCA訓練集的分類混淆矩陣|
 |6|![deep nn 17](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn17.jpg)|ZCA測試集搜尋ZCA高斯噪聲訓練集的分類混淆矩陣|
 
-4..使用ZCA高斯噪聲圖片當訓練集
+4.使用ZCA高斯噪聲圖片當訓練集
 
 |#|圖片|說明|
 |---|----|:---:|
@@ -78,3 +78,9 @@ U是Σ的特徵向量矩陣，S是其特徵值矩陣；因为Σ 是對稱方陣!
 |4|![deep nn 21](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn21.jpg)|使用ZCA高斯噪聲圖片做圖片搜尋|
 |5|![deep nn 22](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn22.jpg)|ZCA測試集搜尋ZCA高斯噪聲訓練集的分類混淆矩陣|
 
+# Conclusion
+
+1.從實驗結果來看，DNN架構使用ZCA效果較差，加入高斯噪聲後效果更差．
+2.MSE無法表現圖片相似度，只能表現數值分布接近的程度．即便Loss低不代表還原的圖片有意義．
+3.使用原始圖片訓練的Autoencoder具有些許去噪能力，但是無法還原圖片細節．
+4.Autoencoder具有一定的分類能力．(使用原始訓練集和加噪訓練集的模型)
