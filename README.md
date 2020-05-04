@@ -87,6 +87,6 @@ U是Σ的特徵向量矩陣，S是其特徵值矩陣；因为Σ 是對稱方陣!
 
 # References
 
-1. David Charte, Francisco Charte, Salvador García, María J. del Jesus, Francisco Herrera:A practical tutorial on autoencoders for nonlinear feature fusion: Taxonomy, models, software and guidelines (2018)  
+1. David Charte, Francisco Charte, Salvador García, María J. del Jesus, Francisco Herrera:  A practical tutorial on autoencoders for nonlinear feature fusion: Taxonomy, models, software and guidelines (2018)  
 
 
