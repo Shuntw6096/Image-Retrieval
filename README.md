@@ -57,5 +57,15 @@ U是Σ的特徵向量矩陣，S是其特徵值矩陣；因为Σ 是對稱方陣!
 |4|![deep nn 9](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn9.jpg)|使用噪聲圖片做圖片搜尋|
 |5|![deep nn 10](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn10.jpg)|原始測試集搜尋有噪聲的訓練集的分類混淆矩陣|
 
+3.使用ZCA圖片當訓練集
+
+|#|圖片|說明|
+|---|----|:---:|
+|1|![deep nn 14](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn14.jpg)|圖片重建|
+|2|![deep nn 15](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn15.jpg)|使用ZCA高斯噪聲圖片重建|
+|3|![deep nn 12](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn12.jpg)|使用原始圖片做圖片搜尋|
+|4|![deep nn 13](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn13.jpg)|使用ZCA噪聲圖片做圖片搜尋|
+|5|![deep nn 16](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn16.jpg)|ZCA測試集搜尋ZCA訓練集的分類混淆矩陣|
+|6|![deep nn 17](https://github.com/Shuntw6096/Image-Retrieval/blob/use_tensorboard_0421/img/deepnn17.jpg)|ZCA測試集搜尋ZCA噪聲的訓練集的分類混淆矩陣|
 
 
